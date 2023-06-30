@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(320deg, #eb92be, #ffef78,#63c9b4);
+}
+.button{
+    padding: 20px;
+    font-size: 17px;
+    width: 66px;
+    margin: 0 3px;
+    border: 3px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.row{
+    margin: 7px;
+}
+.row input{
+    padding: 15px 56px;
+    /* background-color: rgba(255, 255, 255, .25); */
+    color: rgb(35, 224, 196);
+    border: 3px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.calculator{
+    -webkit-backdrop-filter: blur(5.5px);
+    background-color: rgba(41, 29, 29, 0.25);
+    background: rgba(255, 255, 255, .30);
+    border: 2px;
+    border-radius: 23px;
+}
+
+.row button:hover{
+    background-color: #d72880;
+    color: white;
+}

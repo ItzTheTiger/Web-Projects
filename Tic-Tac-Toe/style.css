@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    background-color: rgb(71, 67, 98);
+    color: rgb(206, 181, 212);
+    text-align: center;
+    font-size: 40px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.Container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Roboto',sans serif;
+    position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 9vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(232, 220, 240);
+}
+.gameInfo{
+    padding: 4vw;
+    font-size: 17px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.imgbox img{
+    width: 0 ;
+    transition: width 0.5s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#button{
+    margin: 0 25px;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    background-color: #e5d9f2;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 14px;
+    font-family: 'Cascadia Code';
+}
+.aline{
+    width: 0;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    background-color: rgb(196, 163, 220);
+    transition: width 0.5s ease-in-out;
+}
+#button:hover{
+    background-color: rgb(225, 126, 189);
+}
+@media screen and (max-width:800px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 25px;
+    }
+}
